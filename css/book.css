@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+    /*** 共通レイアウト設定 **********************/
+    #wrap{
+        width: 100%;
+        background: #000;
+    }
+
+    /* 黒背景共通設定 */
+    .rayB{
+        background: #000;
+        color: #999;
+    }
+    /* 白背景共通設定 */
+    .rayW{
+        background: #fff;
+        color: #333;     
+    }
+    
+    /* flex指定 */
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    
+    /* 文字列指定 */
+    .alignC{
+        text-align: center;
+    }
+    .lineH{
+        margin-bottom: 1em;
+    }    
+    .clrG{
+        color: #999;
+    }
+    .clrDSK{
+        color: deepskyblue;
+    }
+    .clrW{
+        color: #fff;
+    }
+    .hB{
+        font-weight:normal;
+        width: 100%;
+    }
+
+    /* 英語表現・大文字指定 */
+    .en{
+        font-family:"Times New Roman";
+    }
+    .capt{
+        font-size:1.6em;
+    }
+
+    a{
+    text-decoration:underline;
+    color:skyblue;
+    }    
+    nav a{
+        text-decoration: none;
+    }
+    nav a:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .contact{
+        padding-top: 5vh;
+    }
+
+/************************** PC用 **************************/
+@media (min-width:751px){
+    
+    /*** 基本設定 **********************/
+    
+    body {
+	margin:0 auto;
+    line-height:1.8;
+    font-size:calc(85% + 0.5vw);
+    color:#ccc;
+    font-family:"Hiragino Mincho W3 JIS2004","Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    }
+
+    /* 横幅指定 PCのみ */
+    .w40{
+        width:40%;
+        min-width: 300px;
+    }
+    .W50{
+        width:50%;
+    }
+    .W60{
+        width:60%;
+        min-width: 350px;
+    }
+    
+    /* ビューポート高さ指定 */
+    .vh100{
+        height: 100vh;
+        min-height: 600px;
+        box-sizing: border-box;
+    }
+    .vhM100{
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    /* 垂直中央 */
+    .vertC{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .box-center{
+        width: 50%;
+        min-width: 550px;
+        margin:0 auto;
+    }
+
+    /* 画像表示指定 */
+    .img_contain{
+        max-height: 90vh;
+        max-width: 100%;
+        margin-top: -8vh;
+    }
+    
+    p.bigger{
+        font-size:25px;
+        padding: 1em 0 2em 0;
+        text-align: center;
+    }
+    p.small{
+        padding-top: 1em;
+        font-size: 0.85em;
+    }
+        
+    /*** パーツ別設計 **********************/
+        
+    /*　ナビパーツ指定 */    
+    nav{
+        font-size: 1.5em;
+        line-height: 2.2em;
+        letter-spacing: 0.1em;
+    }
+    #stores{
+        padding:1em 0 0 1em;
+    }
+    #twitter{
+        padding-left: 1em;
+    }
+    nav li{
+        display: block;
+        padding: 0 1em;
+        transition: 0.3s ease-in-out;
+    }
+
+    /*　ファーストビューパーツ */
+    #catch section{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 10vh 0;
+    }
+    #catch h1{
+        font-size:2em;
+        letter-spacing: 0.05em;
+    }
+
+    #introduction{
+        padding: 10vh 0;
+    }
+    #introduction h1{
+        font-size:1.7em;
+        letter-spacing: 0.1em;
+    }
+    #introduction h2{
+        font-size:1.5em;
+        letter-spacing: 0.2em;
+        padding-bottom:3.5vh;
+    }
+    #introduction h3{
+        font-size:1.8em;
+        letter-spacing: 0.05em;
+    }
+    #introduction img{
+        max-width:35vw;
+        border-radius: 1.5vw;
+        max-height:50vh;
+    }
+    
+    #sonnet{
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+    #sumple-reading{
+        padding: 10vh 0;
+    }
+    #sumple-reading h1{
+        font-size:1.8em;
+        padding-bottom: 5vh;
+        letter-spacing: 0.05em;
+        margin-top: -5vh;
+    }
+
+    .box-txt1{
+        color: #333;
+        width: 70vw;
+        padding: 0 5vw;
+        margin: 0 auto;
+    }
+    .box-txt1 h2{
+        font-size: 1.2em;
+    }
+    .box-txt1 h2 span{
+        color: deepskyblue;
+        padding-right: 1em;
+        opacity: 0.5;
+    }
+    
+    #sumple dl{
+        padding-bottom: 5vh;
+    }
+    #sumple dt{
+        padding: 10px;
+        display:block;
+        cursor: pointer;
+        color: #666;
+        transition: 0.3s ease-in-out;
+    }
+    #sumple dt:hover{
+        background-color: deepskyblue;
+        color: #fff;
+        transition: 0.3s ease-in-out;    
+    }
+    #sumple dd{                             
+        display:none;
+        padding: 1em 5vw;
+    }
+    
+    #voice p{
+        color: #eee;
+    }
+    
+    #event-info{
+        padding: 10vh 10vh 5vh 10vh;
+    }
+    #store-info{
+        padding: 0 10vh;
+    }
+
+    .infoH1{
+        font-size:1.5em; 
+        padding-bottom:3.5vh;
+        letter-spacing: 0.2em;
+    }
+        
+    .btn{
+        background: #fff;
+        border-radius: 10px;
+        padding: 0.7em 2em;
+        width:8em;
+        margin: 0 auto;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        display: inline-block;
+    }
+    .btn:hover{
+        background: deepskyblue;
+    }
+    
+    footer{
+        color: #000;
+        text-align: center;
+        background: linear-gradient(#fff, rgba(255,255,255,0)),url(../img/huzai_sky.jpg) no-repeat center 60%;
+        background-size: cover;
+    }
+    footer a:hover{
+        color: #fff;
+    }
+    footer copy{
+        padding: 1.5em 0;
+        display: block;
+        color:#333;
+    }
+    
+    #epigraph p{
+        opacity: 0.5;
+        font-size: 1.3em;
+        letter-spacing: 0.2em;
+        padding: 30vh 0 15vh;
+    }
+    
+    #topBtn{
+        position: fixed;
+        right: 50px;
+        width: 60px;
+        height: 60px;
+        font-size: 33px;
+        opacity: 0.8;
+        background: deepskyblue;
+        text-align: center;
+        border-radius: 100%;
+    }
+}
+
+/************************** SP用 **************************/
+@media (max-width:750px){
+    body {
+	margin:0 auto;
+    line-height:1.8;
+    font-size:calc(85% + 0.5vw);
+    color:#ccc;
+    font-family:"Hiragino Mincho W3 JIS2004","Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    }
+
+    /* 画像表示指定 */
+    .img_contain{
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    
+    .fSP{
+        justify-content: center;
+    }
+    
+    p.bigger{
+        font-size:1.25em;
+        padding-bottom: 5vh;
+    }
+    p.small{
+        padding-top: 1em;
+        font-size: 0.85em;
+    }
+
+        /*　ナビパーツ指定 */    
+    header h1{
+    }
+    nav{
+        font-size: 2em;
+        line-height: 2.2em;
+        letter-spacing: 0.1em;
+        padding: 10vh 0;
+        text-align: center;
+    }
+    nav #stores{
+        padding-top: 1em;
+    }
+    nav li{
+        display: block;
+        padding: 0 1em;
+        transition: 0.3s ease-in-out;
+    }
+    nav a:hover{
+        color: #fff;
+    }
+
+    /*　ファーストビューパーツ */
+    #catch section{
+        margin: 0 auto;
+        padding: 10vh 1em;
+        font-size: calc(85% + 0.45vw);
+    }
+    #catch h1{
+        font-size:2em;
+        letter-spacing: 0.05em;
+    }
+    #catch p span{
+        max-width: 12.5em;
+        display: block;
+    }
+
+    #introduction{
+        padding: 10vh 0;
+    }
+    #introduction h1{
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+    }
+    #introduction h2{
+        font-size:1.25em;
+        letter-spacing: 0.1em;
+        padding-bottom:3.5vh;
+    }
+    #introduction h3{
+        font-size:1.8em;
+        letter-spacing: 0.05em;
+    }
+    #introduction img{
+        max-width:75vw;
+        border-radius: 3vw;
+        max-height:50vh;
+        margin: 0 2em;
+    }
+    
+    #sonnet{
+        text-align: center;
+        margin-top: 5vh;
+    }
+    
+    #information{
+        padding: 0 1em;
+    }
+    #information ul{
+        font-size: calc(85% + 0.3vw);
+    }
+    #information li{
+        font-size: 1.2em
+    }
+    #information li.small{
+        font-size: 0.85em
+    }
+
+    #sumple-reading{
+        padding: 10vh 0;
+    }
+    #sumple-reading h1{
+        font-size:1.8em;
+        padding-bottom: 5vh;
+        letter-spacing: 0.05em;
+        margin-top: -5vh;
+    }
+
+    .box-txt1{
+        color: #333;
+        margin: 0 auto;
+    }
+    .box-txt1 h2{
+        font-size: 1.2em;
+    }
+    .box-txt1 h2 span{
+        color: deepskyblue;
+        padding: 0 0.5em 0 1em;
+        opacity: 0.5;
+        display: inline-block;
+    }
+    
+    #sumple dl{
+        padding-bottom: 5vh;
+    }
+    #sumple dt{
+        padding: 10px;
+        display:block;
+        cursor: pointer;
+        color: #666;
+        transition: 0.3s ease-in-out;
+    }
+    #sumple dt:hover{
+        background-color: deepskyblue;
+        color: #fff;
+        transition: 0.3s ease-in-out;    
+    }
+    #sumple dd{                             
+        display:none;
+        padding: 1em 5vw;
+    }
+    #sumple p{
+        font-size: 1.1em;
+    }
+
+    
+    #voice{
+        padding: 8em 0;
+    }
+    #voice p{
+        color: #eee;
+        font-size: 1.1em;
+    }
+    
+    #event-info{
+        padding: 10vh 1em 5vh 1em;
+    }
+    #store-info{
+        padding: 0 1em;
+    }
+
+    .infoH1{
+        font-size:1.5em; 
+        padding-bottom:3.5vh;
+        letter-spacing: 0.1em;
+    }
+    
+    .btn{
+        background: #fff;
+        border-radius: 10px;
+        padding: 0.7em 2em;
+        width:8em;
+        margin: 0 auto;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        display: inline-block;
+    }
+    .btn:hover{
+        background: deepskyblue;
+    }
+    
+    footer{
+        color: #000;
+        text-align: center;
+        background: linear-gradient(#fff, rgba(255,255,255,0)),url(../img/huzai_sky.jpg) no-repeat center 60%;
+        background-size: cover;
+    }
+    footer a:hover{
+        color: #fff;
+    }
+    footer copy{
+        padding: 1.5em 0;
+        display: block;
+        color:#333;
+    }
+    
+    #epigraph p{
+        opacity: 0.5;
+        letter-spacing: 0.1em;
+        padding: 60vh 0 15vh;
+    }
+    
+    #topBtn{
+        display: none;
+    }
+}

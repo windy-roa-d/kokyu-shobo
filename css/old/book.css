@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* PC用 */
+@media (min-width:751px){
+    body {
+	margin:0 auto;
+    line-height:1.8;
+    font-size:calc(85% + 0.5vw);
+    color:#ccc;
+    font-family:"Hiragino Mincho W3 JIS2004","Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    }
+
+    a{
+    text-decoration:none; color:skyblue;
+    }
+    
+    #wrap{
+        width: 100%;
+        background: #000;
+    }
+    
+    header{
+        position: relative;
+        height: 90vh;
+        margin-bottom: 10vh;
+        min-height: 400px;
+        background: url(../img/hyoushi-huzai.jpg) no-repeat 30%;
+        background-size: contain;
+    }
+    
+    nav{
+        padding-bottom: 1em;
+        font-size: 1.1em;
+        line-height: 2.3em;
+    }
+    
+    .box-container{
+        position: relative;
+        top: 50vh;
+        margin-left: 50%;
+        width: 40%;
+        transform: translateY(-50%);
+    }
+    .box-container2{
+        position: absolute;
+        top:50vh;
+        width: 40%;
+        opacity: 0.5;
+        transform: translateY(-50%);
+        font-size: 1.3vw;
+        line-height: 2.5em;
+    }
+    .box-center{
+        width: 50%;
+        margin:0 auto;
+    }
+    
+    .box-container h1{
+    font-weight:normal; 
+    font-size:1.4em; 
+    margin-bottom:10%;
+    }
+    
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+
+    #catch{
+        min-height: 100vh;
+        background: #fff;
+        color:#333;
+    }
+    #catch section{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 10vh 0;
+    }
+    p.bigger{
+        font-size:3.5vh;
+        padding: 1em 1em 2em 1em;
+        text-align: center;
+    }
+    #catch h1{
+        color: deepskyblue;
+        font-size:6vh;
+        letter-spacing: 0.05em;
+    }
+    .en{
+        font-family:"Times New Roman";
+    }
+    .capt{
+        font-size:1.6em;
+    }
+    #introduction{
+        position: relative;
+        min-height: 100vh;
+        width:100%;
+        padding: 7.5vh 0;
+        box-sizing: border-box;
+    }  
+    #introduction div{
+        font-size:2.8vh;
+    }
+    #introduction h1{
+    font-weight:normal; 
+    font-size:5vh; 
+    text-align: center;
+    letter-spacing: 0.1em;
+    width: 100%;
+    }
+    
+    #introduction h2{
+    font-weight:normal; 
+    font-size:4vh; 
+    padding-bottom:3.5vh;
+    text-align: center;
+    letter-spacing: 0.2em;
+    width: 100%;
+    color: deepskyblue;
+    }
+    #introduction h3{
+    font-size:5vh;
+    letter-spacing: 0.05em;
+    width: 100%;
+    }
+    
+    #introduction img{
+        max-width:35vw;
+        border-radius: 1.5vw;
+        max-height:50vh;
+    }
+    .txtR{
+        text-align: right;
+    }
+    .ray1{
+        max-width: 900px;
+        margin:0 auto;
+    }
+    .lineH{
+        margin-bottom: 1em;
+    }
+    
+    #sonnet{
+        text-align: center;
+    }
+    
+    #information span{
+        color: deepskyblue;
+    }
+    #information ul{
+        padding-bottom: 0.5em;
+    }
+    
+    #sumple-reading{
+        min-height: 100vh;
+        background: #fff;
+        padding: 3.5vh 0;
+    }
+    .box-txt1{
+        color: #333;
+        width: 70vw;
+        padding: 0 5vw;
+        margin: 0 auto;
+    }
+   .box-txt1 h2{
+       font-size: 1.2em;
+    }
+    .box-txt1 h2 span{
+        color: deepskyblue;
+        padding-right: 1em;
+        opacity: 0.5;
+    }
+    .gray{
+        color: #999;
+    }
+    #sumple dl{
+        padding-bottom: 5vh;
+    }
+   #sumple dt{
+       padding: 10px;
+       display:block;
+       cursor: pointer;
+       color: #666;
+    }
+   #sumple dt:hover{
+       background-color: deepskyblue;
+       color: #fff;
+    }
+    #sumple dd{
+        display:none;
+        padding: 1em 5vw;
+    }
+    
+    #sumple-reading h1{
+    color: deepskyblue;
+    font-size:5vh;
+    padding-bottom: 5vh;
+    letter-spacing: 0.05em;
+    width: 100%;
+    text-align: center;
+    }
+    #sumple-reading p{
+    margin-bottom: 1em;
+    }
+    
+    #voice{
+        min-height: 70vh;
+        padding: 15vh 0;
+        background: #000;
+        text-align: center;
+    }
+    
+    #voice p{
+        margin-bottom: 2em;
+    }
+    
+    #event-info{
+        background: #fff;
+        padding: 10vh;
+        color: #666;
+    }
+    #event-info h1{
+    font-weight:normal; 
+    font-size:4vh; 
+    padding-bottom:3.5vh;
+    letter-spacing: 0.2em;
+    width: 100%;
+    color: deepskyblue;
+    }    
+    footer{
+        width: 100%;
+        color: #000;
+        text-align: center;
+        background: linear-gradient(#fff, rgba(255,255,255,0)),url(../img/test5.jpg) no-repeat center 60%;
+        background-size: cover;
+    }
+    #epigraph p{
+        opacity: 0.5;
+        font-size: 1.3em;
+        letter-spacing: 0.2em;
+        padding: 15vh 0;
+    }
+    footer copy{
+        padding: 1.5em 0;
+        display: block;
+    }
+}
+
+/* スマホ用 */
+@media (max-width:750px){
+    body {
+	width:85%;
+    font-size:17px;
+	margin:0 auto;
+    line-height:1.65;
+    color:#666;
+    font-family:"Hiragino Mincho W3 JIS2004","Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    }
+
+    a{ 
+    text-decoration:none;
+    color:#000;
+    }
+    
+    h1{
+    font-weight:normal; 
+    font-size:1.3em;
+    margin:20% 0; 
+    text-align:center;
+    }
+    
+    article{
+    }
+    
+    footer{
+        width: 100%;
+        text-align:center;
+    }
+}

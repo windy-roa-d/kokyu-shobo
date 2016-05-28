@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/* 全体調整 	 fffde6 #F5F0E6
+ */
+
+.fade-layer,
+body:before{
+    content: '';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    z-index:99999;}
+body.fade-layer-off:before{
+    content: none;}
+body {
+	width:100%;
+	margin:0 auto;
+	min-width:700px;
+    line-height:1.5;
+    font-size:14px;
+    font-family:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+}
+
+.flex1{
+	display: flex;
+	flex-wrap: wrap;}
+.flex2{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;}
+.flex3{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap: wrap;}
+.flex4{
+	display: flex;
+	justify-content: center;
+	align-items:top;
+	flex-wrap: wrap;}
+.relative{position: relative;}
+
+/* 画面全体の幅調整 */
+#wrap{
+	width:100%;
+	background:url(../img/bg_craftpaper04.jpg);
+}
+.rightSide{
+	width: 36%;
+	height:100%;
+	position:absolute;
+	right:0;
+}
+.leftSide{
+	width: 64%;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+/* ヘッダー */
+header{
+	width:100%;
+	text-align:center;
+	z-index: 1;
+	height: 100%;
+}
+#logo{
+	height:42%;
+	position:relative;}
+#logo img{
+	width:50%;
+	min-width:200px;
+	position:absolute;
+	top: 0;	left: 0; right: 0; bottom: 0;
+	margin: auto;
+}
+nav{
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	height: 20%;
+	padding: 5% 0;
+	width: 80%;
+	margin: 0 auto;}
+nav ul{
+	margin:0 auto;}
+nav ul#bx-pager a{
+	width: 46%;
+	padding:0 2%;
+	max-width:100px;
+	transition: 0.3s ease-in-out;}
+nav ul#bx-pager a:hover{
+	background:#fff;
+	transition: 0.3s ease-in-out;}
+nav ul#sns a{
+	width: 15%;
+	max-width:40px;}
+nav img{max-width:70%;
+}
+ 
+#info a{
+	padding: 3% 0;
+	margin:0 10%;
+	display:block;
+	transition: 0.5s ease-in-out;
+	text-decoration:none;
+	color:#000;}
+#info a:hover{
+	background: #fff;
+	transition: 0.5s ease-in-out;}
+	
+/* コンテンツスライド 　背景設定*/
+div#slaid1{
+	height:100%;
+	background:url(../img/test2.jpg) left center;}
+div#slaid2{
+	height:100%;
+	background:url(../img/test3.jpg) left 20%;}
+div#slaid3{
+	height:100%;
+	background:url(../img/bg_craftpaper04.jpg);}
+div#slaid4{
+	height:100%;
+	background:url(../img/test3.jpg) left 20%;}
+div#slaid5{
+	height:100%;
+	background:url(../img/test3.jpg) left 20%;}
+
+/* コンテンツスライド 　共通部分*/
+.caption1{
+	width:95%;
+	margin-right:5%;
+	height:25%;
+	position:absolute; bottom:0; right:0;}
+.caption1 img{
+	width: 80%;
+	position: absolute; right:0; top:0; bottom:0;
+	margin:auto;}
+.caption2{
+	position:absolute; top:0;
+	width:100%;
+	height:75%;
+	box-sizing:border-box;
+	padding:10%;
+	overflow:hidden;
+}
+
+/* コンテンツスライド 　各パート個別設定*/
+#novels{
+	background:rgba(0,0,0,0.95) url(../img/novel2.png) no-repeat center center;
+	background-size:70%;
+	transition: 2.3s ease-in-out;}
+#novels:hover{
+	background:rgba(255,255,255,0.7);
+	transition: 0.5s ease-in-out;
+}
+#journey{
+	background:rgba(0,0,0,0.9) url(../img/journey2.png) no-repeat center center;
+	background-size:70%;
+	transition: 2.3s ease-in-out;}
+#journey:hover{
+	background:rgba(255,255,255,0.2);
+	transition: 0.5s ease-in-out;
+}
+#journey li{
+	padding: 1em 3em;
+	text-align: center;
+}
+#journey li:hover{
+	background:#fff;
+	transition: 0.5s ease-in-out;
+}
+
+/* コンテンツスライド 　ランダムピックアップ*/
+#pickup{
+	height: 100%; background: #fff; width: 70%; margin-left:10%;
+	box-sizing: border-box;
+	padding-top: 6%;
+	}
+#pickup h1{
+	font-weight:normal;
+	font-size:1.5em;
+	color:#ccc;
+	height:10%;
+	text-align:center;
+}
+#pickup p{
+	height: 80%;
+	width:85%;
+	margin:0 auto;
+	overflow: hidden;
+	line-height: 1.6em;
+	font-size:1.1em;
+}
+#pickup .more{
+	height: 10%;
+	box-sizing:border-box;
+	width:100%;
+	background: #fff;
+	text-align:center;
+}
+.more a{
+	padding:1.5em 0;
+	text-decoration:none;
+	color:#666;
+	display:block;
+	transition: 0.5s ease-in-out;
+}
+.more a:hover{
+	background: skyblue;
+}
+
+/* コンテンツ */
+#about{
+	width:80%;
+	margin:0 auto;
+	padding:7% 0;
+	box-sizing:border-box;
+	font-size:1.1em;
+	line-height: 1.6em;
+	position: relative;
+}
+#mail{
+	height: 50%;
+	width:80%;
+	margin:0 auto;
+}
+#contact{
+	width:80%;
+	margin:0 auto;
+}
+.rightSide h1{
+	padding:6% 0;
+
+}
+
+/* フッター */
+footer{
+	width:80%;
+	background-color:#000;
+	color:#fff;
+	padding: 5% 10%;
+}

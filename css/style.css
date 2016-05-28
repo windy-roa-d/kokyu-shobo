@@ -1,0 +1,548 @@
+@charset "UTF-8";
+
+/* 全体調整 PC */
+
+.fade-layer,
+body:before{
+    content: '';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    z-index:99999;}
+body.fade-layer-off:before{
+    content: none;}
+body {
+	width:100%;
+	margin:0 auto;
+    line-height:1.5;
+    font-size:14px;
+    font-family:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+}
+
+.flex1{
+	display: flex;
+	flex-wrap: wrap;}
+.flex2{
+	display: flex;
+	justify-content: space-between;
+	align-items:baseline;
+	flex-wrap: wrap;}
+.flex3{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap: wrap;}
+.flex3b{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap: wrap;}
+.flex4{
+	display: flex;
+	justify-content: center;
+	align-items:top;
+	flex-wrap: wrap;}
+.flex5{
+	display: flex;
+	align-items:baseline;
+	flex-wrap: wrap;}
+.flex6{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-wrap: wrap;}
+.flex7{
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;}
+	
+.relative{position: relative;}
+
+/* 画面全体の幅調整 */
+#wrap{
+	width:100%;
+	background:url(../img/bg_craftpaper04.jpg);
+}
+
+.view{
+	height:700px;
+	background:url(../img/bg_craftpaper04.jpg);
+}
+
+.h{
+	height: 100%;
+}
+
+.rightSide{
+	width: 36%;
+	position:absolute;
+	right:0; 
+	background:url(../img/bg_craftpaper04.jpg);
+}
+.rightSide h1{
+	padding:6% 0;
+
+}
+.leftSide{
+	width: 64%;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+h1,h2,h3,h4,h5{
+	font-weight:normal;
+}
+
+/* ヘッダー */
+header{
+	width:100%;
+	text-align:center;
+	z-index: 1;
+	height: 100%;
+}
+#logo{
+	height:38%;
+	position:relative;}
+#logo img{
+	width:50%;
+	min-width:200px;
+	position:absolute;
+	top: 0;	left: 0; right: 0; bottom: 0;
+	margin: auto;
+}
+nav{
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	border-top: 1px solid rgba(0,0,0,0.5);
+	padding: 5% 0;
+	width: 80%;
+	margin: 0 auto;
+}
+nav ul{
+	margin:0 auto;
+}
+nav ul#bx-pager a{
+	padding:2%;
+	margin:1% 0;
+	line-height:1em;
+	width:27%;
+	min-width:100px;
+	transition: 0.5s ease-in-out;}
+nav ul#bx-pager img{
+	max-width:100%;
+}
+nav ul#bx-pager a:hover{
+	background:#fff;
+	transition: 0.5s ease-in-out;}
+nav ul#sns a{
+	width: 8%;
+	max-width:28px;
+	min-width:20px;
+	padding:3% 2% 0 2%;}
+nav ul#sns img{
+	max-width:100%;
+}	
+#sns i{
+color:#55acee; font-size:20px;	
+}
+
+#here{
+	width:30%;
+	margin:5% auto;
+	min-width:100px;
+}
+#here img{
+	max-width:100%;
+}
+
+#info a{
+	padding: 3% 0;
+	margin:0 10%;
+	display:block;
+	transition: 0.5s ease-in-out;
+	text-decoration:none;
+	color:#330000;}
+#info a:hover{
+	background: #fff;
+	transition: 0.5s ease-in-out;}
+	
+/* コンテンツスライド 　背景設定*/
+div#slaid1{
+	height:100%;
+	background:url(../img/test2.jpg) left center;}
+div#slaid2{
+	height:100%;
+	background:url(../img/test3.jpg) left 20%;}
+div#slaid3{
+	height:100%;
+	background:url(../img/bg_craftpaper04.jpg);}
+div#slaid4{
+	height:100%;
+	background:url(../img/recitation.png);
+	background-size:cover;
+}
+div#slaid5{
+	height:100%;
+	background:url(../img/bg_craftpaper04.jpg);}
+
+/* コンテンツスライド 　共通部分*/
+.content-page{
+	width:66%;
+	height:96%;
+	margin:0 auto;
+	padding:2%;
+	overflow: auto;
+}
+
+.hover{
+	padding: 3%;
+	transition: 0.5s ease-in-out;
+	border-radius: 10px;
+}
+.hover:hover{
+	background:#fff;
+	transition: 0.5s ease-in-out;
+}
+.hover2{
+	padding: 2% 3%;
+	transition: 0.5s ease-in-out;
+	border-radius: 10px;
+}
+.hover2:hover{
+	background:#fff;
+	transition: 0.5s ease-in-out;
+}
+
+.caption1 h1{
+	font-size: 2em;
+	color: rgba(0,0,0,0.5);
+	letter-spacing: 0.12em;
+	margin-right:1em;
+}
+.caption1 h2{
+	font-size: 1.5em;
+	color: rgba(0,0,0,0.5);
+	text-decoration:underline;
+}
+.caption1 p{
+color: rgba(0,0,0,0.5);
+}
+.caption2{
+color: rgba(0,0,0,0.5);
+}
+.caption2 a{
+	display:block;
+	font-size:1.1em;
+}
+
+.caption3 h1{
+color: rgba(0,0,0,0.5);
+}
+.caption3 li{
+	margin:1% 2% 1% 0;
+	text-decoration:underline;
+	color: rgba(0,0,0,0.7);
+}
+
+/* コンテンツスライド 　各パート個別設定*/
+#novel{
+	background:rgba(0,0,0,0.95) url(../img/novels.png) no-repeat center center;
+	background-size:85%;
+	transition: 2.3s ease-in-out;
+}
+#novel:hover{
+	background:rgba(255,255,255,0.5);
+	transition: 0.5s ease-in-out;
+}
+#novel>.caption1{
+	padding:3%;
+}
+
+#novel-content section{
+	padding:2% 3%;
+	margin:1% 0;
+	border-radius:10px;
+	display: flex;
+	align-items:baseline;
+	flex-wrap: wrap;
+	transition: 0.5s ease-in-out;
+}
+#novel-content section:hover{
+	background: #fff;
+	transition: 0.5s ease-in-out;
+}
+#novel-content section h1{
+font-size: 1.2em;
+font-weight:bolder;
+margin-right:1.5em;
+text-decoration:underline;
+}
+#novel-content section li{
+margin-right:2%;
+text-decoration:underline;
+}
+#novel-content section p{
+color: rgba(0,0,0,0.5);
+}
+
+#journey{
+	background:rgba(0,0,0,0.95) url(../img/journey.png) no-repeat center center;
+	background-size:85%;
+	transition: 2.3s ease-in-out;
+}
+#journey:hover{
+	background:rgba(255,255,255,0.5);
+	transition: 0.5s ease-in-out;
+}
+#journey section{
+	margin: 2% 0;
+}
+
+#poem{
+	background:rgba(255,255,255,0.7);
+}
+#poem dd{
+font-size: 1.2em;
+}
+#poem dt{
+	color:rgba(0,0,0,0.5);
+}
+#poem dl a{
+	display: block;
+	padding:2%;
+	margin: 1% 0;
+}
+#poem>.caption2 h1{
+	font-size: 1.2em;
+	margin:2% 0;
+	color:#000;
+}
+#poem>.caption2 a{
+	font-size: 1em;
+	text-decoration:underline;
+}
+#poem li{
+	margin:2% 4% 0 0;
+}
+
+#book{
+	background:rgba(255,255,255,0.5);
+}
+
+#book .caption3{
+	display: flex;
+	align-items:center;
+	flex-wrap: wrap;
+}
+#book .caption3 h1{
+	width:25%;
+	min-width:120px;
+}
+#book .caption3 ul{
+	width:75%;
+}
+#book .caption3 dl{
+	width:75%;
+}
+.bookinfo{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.bookinfo li{
+	width: 45%;
+	min-width:220px;
+	padding:2%;
+	margin:1% 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;
+}
+.bookinfo li span:first-child{
+	width:30%;
+}
+.bookinfo li span:last-child{
+	width:60%;
+	height:100%;
+	padding:0 5%;
+}
+.bookinfo li span{
+	width:30%;
+	color:rgba(0,0,0,0.5);
+}
+
+.bookinfo li span h1{
+	color:#000;
+}
+.bookinfo img{
+	width:100%;
+}
+
+/* コンテンツスライド 　ランダムピックアップ*/
+#pickup{
+	height: 100%; background: #fff; width: 70%; margin-left:10%;
+	box-sizing: border-box;
+	padding-top:5%;
+	}
+#pickup h1{
+	font-weight:normal;
+	font-size:1.5em;
+	color:#ccc;
+	height:10%;
+	text-align:center;
+}
+#pickup p{
+	color:#444;
+	height: 80%;
+	width:85%;
+	margin:0 auto;
+	overflow: hidden;
+	line-height: 1.6em;
+	font-size:1.2em;
+}
+#pickup .more{
+	height: 15%;
+	width:100%;
+	box-sizing:border-box;
+	background:#fff;
+	text-align:center;
+}
+
+#pickup a{
+	text-decoration:none;
+	color:#666;
+	display:block;
+	height:100%;
+	transition: 0.5s ease-in-out;
+}
+.more a:hover{
+	background: skyblue;
+}
+
+/* コンテンツ */
+#about{
+	width:80%;
+	margin:15% auto;
+	box-sizing:border-box;
+	font-size:1.1em;
+	line-height: 1.6em;
+	position: relative;
+}
+
+.cmn-btn{
+	width: 100%;
+	background:rgba(80,200,200,0.5);
+	border-radius:10px;
+	padding:3% 0;
+	text-align:center;
+	margin:8% auto;
+	transition: 0.5s ease-in-out;
+}
+.cmn-btn:hover{
+	width: 100%;
+	background:#fff;
+	transition: 0.5s ease-in-out;
+}
+#about h1,#mail h1{
+	width:100%;
+	padding-top:1.5em;
+	font-size: 1.8em;
+	color: rgba(80,200,200,1);
+	opacity:0.75;
+	letter-spacing: 0.1em;
+}
+
+#mail{
+	height: 50%;
+	width:80%;
+	margin:0 auto;
+}
+/*メールフォーム全体を囲っているタグのid*/
+#default_top {
+	width:100%;
+}
+
+/*メールフォームのパーツや送信ボタンを囲っているタグのclass（タイトル、説明文以外）*/
+#default_top .main {
+	width:100%;
+}
+
+/*『textarea』パーツの表示名を囲っているタグのclass（[ 簡易メールフォーム　※文字数上限：1000 ]の部分）*/
+#default_top .textarea_left{
+	font-size:0.8em;
+	opacity: 0.5;
+}
+
+/*『textarea』パーツの入力項目を囲っているタグのclass*/
+#default_top .textarea_right {
+	width:100%;
+}
+
+/*『textarea』パーツの入力項目のclass（inputなどの部分）*/
+#default_top .textarea_parts {
+	width:95%;
+	height:8em;
+}
+
+/*メールフォームの送信ボタンを囲っているタグのclass*/
+#default_top .submit {
+	margin:0 auto;
+}
+
+/*メールフォームの送信ボタンのclass*/
+#default_top .submit_button {
+	margin:0 auto;
+	width: 30%;
+	padding:2% 0;}
+
+#contact{
+	width:85%;
+	height:50%;
+	box-sizing:border-box;
+	padding-top:5%;
+	margin:0 auto;
+}
+
+/* フッター */
+footer{
+	width:80%;
+	background-color:#000;
+	color:#fff;
+	padding: 5% 10%;
+}
+
+#profile a{
+	color:#fff;
+	text-decoration:underline;
+	line-height:1.8em;
+}
+
+#profile div{
+	padding:5%;
+}
+
+#profile h1{
+	font-size:1.5em;
+	letter-spacing: 0.12em;
+	color:#55acee;
+}
+#profile span{
+	width:20%;
+}
+
+#profile img{
+	width:100%;
+	border-radius:50%;
+}
+
+#profile ul{
+	margin:5% 0;
+}

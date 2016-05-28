@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/* 全体調整 	 fffde6 #F5F0E6
+ */
+
+.fade-layer,
+body:before{
+    content: '';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    z-index:99999;
+}
+
+body.fade-layer-off:before{
+    content: none;
+}
+
+body {
+	width:100%;
+	margin:0 auto;
+	min-width:700px;
+    line-height:1.5;
+    font-size:14px;
+    font-family:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+}
+
+.flex1{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+}
+
+.flex2{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.flex3{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap: wrap;
+}
+
+.flex4{
+	display: flex;
+	justify-content: center;
+	align-items:top;
+	flex-wrap: wrap;
+}
+
+.order1{order:1;}
+.order2{order:2;}
+.order3{order:3;}
+
+.relative{position: relative;}
+
+/* ヘッダー */
+header{
+	margin:0 auto;
+	height:85%;
+}
+
+div#slaid1{
+	height:100%;
+	background:url(../img/test2off.jpg) left center;
+}
+div#slaid2{
+	height:100%;
+	background:url(../img/test3.jpg) left 20%;
+}
+
+#slaid0{
+	background:url(../img/noise1.png);
+}
+
+.slaid{
+	position: relative;
+}/* JSで高さを書きこんでるので消さないように */
+
+.captionAbout{
+	position:absolute;
+	top: 0;	left: 35%; bottom: 0;
+	margin: auto;
+	height: 50%;
+	width: 50%;
+}
+
+.captionAbout img{
+	width:20%;
+	padding: 3%;
+	margin:0 auto;
+}
+
+.caption1{
+	height:15%;
+	position:absolute;
+	top:6%;
+	right: 5%;
+}
+.caption2{
+	position:absolute;
+	top:0;
+	right: 0;
+	width:50%;
+	height:100%;
+	/*top:27%;left: 35%;
+	background-image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1));
+*/	padding: 3%;
+}
+.caption2:hover{
+	background-image: radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2));
+}
+
+#headerbox{
+	position: absolute;
+	top: 0;	left:4%;
+	width:20%;
+	max-width:230px;
+	height:100%;
+	text-align:center;
+/*	background: rgba(0,0,0,0.2);*/
+	z-index: 1;
+}
+#logo{
+	height:30%;
+	box-sizing:border-box;
+	padding:15% 0;
+	position:relative;
+	background: rgba(255,255,255,0.9) content-box;
+}
+#logo img{
+	width:80%;
+	position:absolute;
+	top: 0;	left: 0; right: 0; bottom: 0;
+	margin: auto;
+}
+
+nav {
+	width:100%;
+	height: 60%;
+}
+nav ul{
+	height:100%;
+}
+nav li{
+	height:16%;
+	box-sizing:border-box;
+	text-align:center;
+	vertical-align: middle;
+	position: relative;
+}
+nav li:first-child:hover{
+	background: #fff;
+}
+
+nav li img{
+	max-width: 80%;
+	max-height: 40%;
+	position: absolute;
+	top: 0;	left: 0; right: 0; bottom: 0;
+	margin: auto;
+}
+
+nav li.sns img{
+	position:relative;
+	max-width: 100%;
+	max-height: 50%;
+	margin:5% auto;
+}
+
+header p{
+	line-height: 1.8em;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+section#info{
+	width:100%;
+	height:15%;
+	background:url(../img/noise1.png);
+}
+section#info h1{
+	margin-left:4%;
+	width:20%;
+	text-align:center;
+} 
+section#info div{
+	width: 70%;
+	margin:0 auto;
+}
+section#info div:hover{
+	background: #fff;
+}
+section#info p{
+	line-height: 1.6em;
+	box-sizing:border-box;
+	padding:2%;
+}
+
+/* コンテンツ */
+article#pickup{
+	width:75%;
+	max-width:700px;
+	background:#fff url(../img/100-90-5.png);
+}
+
+div#contents{
+	width:100%;
+	height: 100%;
+	background:url(../img/bg_craftpaper04.jpg);
+	padding:20px 0;
+}
+
+/* TOPページコンテンツ */
+div#bookmark{
+	height: 100%;
+	width:20%;
+	min-width:150px;
+	line-height: 1.2em;
+	text-align: center;
+	padding:20px;
+}
+div#hello{
+	width:50%;
+	min-width:400px;
+	padding:20px;
+}
+article#welcome,article#mail{
+	padding:40px;
+	background:#fff url(../img/100-90-5.png);
+	margin-bottom:20px;
+	border-radius:3px;
+}
+
+/* フッター */
+footer{
+	width:100%;
+	background-color:#000;
+	color:#fff;
+	padding: 25px 0;
+}
